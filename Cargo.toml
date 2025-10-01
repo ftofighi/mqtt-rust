@@ -1,0 +1,30 @@
+[package]
+name = "mqtt-rust-example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rumqttc = "0.24.0"
+pretty_env_logger = "0.4"
+tokio = { version = "1", features = ["full"] }
+sqlx = { version = "0.7", features = ["sqlite", "runtime-tokio-rustls", "macros"] }
+anyhow = "1.0"
+
+[[bin]]
+name = "syncpubsub"
+path = "src/syncpubsub.rs"
+
+[[bin]]
+name = "asyncpubsub"
+path = "src/asyncpubsub.rs"
+
+[[bin]]
+name = "iot"
+path = "src/iot.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+
+
