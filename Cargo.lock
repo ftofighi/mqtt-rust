@@ -798,6 +798,7 @@ dependencies = [
  "anyhow",
  "pretty_env_logger",
  "rumqttc",
+ "serde",
  "sqlx",
  "tokio",
 ]

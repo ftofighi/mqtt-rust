@@ -9,6 +9,7 @@ pretty_env_logger = "0.4"
 tokio = { version = "1", features = ["full"] }
 sqlx = { version = "0.7", features = ["sqlite", "runtime-tokio-rustls", "macros"] }
 anyhow = "1.0"
+serde = "1.0.228"
 
 [[bin]]
 name = "syncpubsub"
@@ -25,6 +26,12 @@ path = "src/iot.rs"
 [[bin]]
 name = "main"
 path = "src/main.rs"
+
+[[bin]]
+name = "connection"
+path = "src/connection.rs"
+
+
 
 
 
