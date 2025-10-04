@@ -5,7 +5,7 @@ use tokio;
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     
-    let mut mqttoptions = MqttOptions::new("rumqtt-subscriber", "172.30.14.57", 1883);
+    let mut mqttoptions = MqttOptions::new("rumqtt-subscriber", "", 1883);
     mqttoptions
         .set_keep_alive(Duration::from_secs(5))
         .set_clean_session(true);
